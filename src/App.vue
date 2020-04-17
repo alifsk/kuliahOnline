@@ -1,9 +1,9 @@
 <template>
+
     <div id="app">
-        <link rel="stylesheet"
-            href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-            integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-            crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+        <link rel="stylesheet" href="path/to/material-design-iconic-font/css/material-design-iconic-font.min.css">
         <div>
             <b-navbar class="navbar" id="nav" toggleable="lg" fixed="top">
                 <b-navbar-brand  class="navbar-brand m-auto" href="#home">
@@ -13,10 +13,14 @@
                 <b-collapse id="nav-collapse" class="nav-collapse" is-nav>
                     <b-navbar-nav class="mr-auto">
                         <b-nav-item class="nav-item" href="/" right><b>Home</b></b-nav-item>
-                        <b-nav-item class="nav-item" href="" right><b>About Us</b></b-nav-item>
-                        <b-nav-item class="nav-item" href="product" right><b>POD</b></b-nav-item>
-                        <b-nav-item class="nav-item" href="" right><b>MOD</b></b-nav-item>
-                        <b-nav-item class="nav-item" href="" right><b>Liquid</b></b-nav-item>
+                        <b-nav-item class="nav-item" href="/about" right><b>About Us</b></b-nav-item>
+                        <b-nav-item-dropdown class="nav-item" text="Product" right>
+                            <b-dropdown-item href="/produk/pod"><b>MOD</b></b-dropdown-item>
+                            <b-dropdown-item href="/produk/mod"><b>POD</b></b-dropdown-item>
+                            <b-dropdown-item href="/produk/liquid"><b>Liquid</b></b-dropdown-item>
+                        </b-nav-item-dropdown>
+                        <b-nav-item class="nav-item" href="/contact" right><b>Contact Us</b></b-nav-item>
+                        <b-nav-item class="nav-item" href="/login" right><b>Sign In</b></b-nav-item>
                     </b-navbar-nav>
                 </b-collapse>
                 <b-collapse id="nav-collapse" class="nav-collapse" is-nav>
